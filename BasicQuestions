@@ -1,15 +1,42 @@
-#Be updated with latest versions and changes in latest versions
+$$$ =>
+Be updated with latest stable versions and changes in latest versions
 
 => Latest MacOS version
-macOS 12(Monterey)
+macOS 11(Big Sur)
+<<https://support.apple.com/en-in/HT201260>>
 
 => Latest XCode version
-XCode 12.5
+XCode 13.0
+<<https://en.wikipedia.org/wiki/Xcode>>
 
 => Latest IOS version
-IOS 15.0(Beta)
+IOS 15.0
+<<https://en.wikipedia.org/wiki/IOS_version_history>>
 
 => Latest Swift version
 Swift 5.5
+<<https://en.wikipedia.org/wiki/Swift_(programming_language)>>
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -End- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+$$$ =>
+What is the use of the dump function? Explain with example.
+>>Dump function is used to print the content of the object
+
+struct Employee {
+    var id:Int
+    var name:String
+    
+    init(id:Int, name:String) {
+        self.id = id
+        self.name = name
+    }
+}
+
+let emp1 = Employee(id: 10, name: "Srikanth")
+let emp2 = Employee(id: 10, name: "Srikanth")
+
+let empArr:[Employee] = [emp1,emp2]
+dump(empArr)
